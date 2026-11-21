@@ -1,0 +1,11 @@
+*.db
+*.sqlite3
+*.csv
+*.engine
+*.onnx
+*.pt
+*.pth
+__pycache__/
+*.py[cod]
+venv/
+.env
