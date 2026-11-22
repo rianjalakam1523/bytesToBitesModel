@@ -89,6 +89,7 @@ void check_system_stats() {
 }
 
 int main() {
+    setbuf(stdout, NULL);
     printf("Starting Monitor...\n");
     while (1) {
         check_system_stats();

@@ -5,13 +5,6 @@
 
 // AUTHOR: RIAN JALAKAM, FALL 2026
 
-typedef struct {
-    size_t capacity;   // Total bytes allocated from the OS
-    size_t offset;     // Current tracking position in the buffer
-    uint8_t *buffer;   // Raw memory block pointer
-} Arena;
-
-
 // Initialize the arena by grabbing a large chunk of memory upfront
 Arena* arena_create(size_t capacity) {
     Arena *arena = (Arena*)malloc(sizeof(Arena));
