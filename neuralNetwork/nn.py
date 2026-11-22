@@ -2,6 +2,8 @@ import tensorflow as tf
 from tensorflow.keras import Sequential, Input
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, ReLU, Softmax
 
+# AUTHOR: RIAN JALAKAM, FALL 2026
+
 """
 This will remain at least mostly untouched until we have collected our training data. 
 Our team will be taking pictures of the inventory within food banks and gradually organizing these images and labeling them before the training phase starts, to which the model will be run through ONNX.
