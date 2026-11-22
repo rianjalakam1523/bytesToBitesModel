@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <dirent.h>
 
+// AUTHOR: RIAN JALAKAM, FALL 2026
+
 #define THERMAL_PATH "/sys/class/thermal/thermal_zone0/temp"
 #define MEMINFO_PATH "/proc/meminfo"
 
@@ -87,7 +89,7 @@ void check_system_stats() {
 }
 
 int main() {
-    printf("Starting Jetson Orin Nano Live System & Voltage Monitor...\n");
+    printf("Starting Monitor...\n");
     while (1) {
         check_system_stats();
         printf("--------------------------------------------------\n");
